@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E1014;
+}
+header {
+    margin-top: 46px;
+    display: flex;
+    flex-direction: row;
+}
+.purple-light {
+    position: absolute;
+    z-index: 1;
+    top: -120px;
+    width: 259px;
+    height: 259px;
+    background-color: rgba(131, 58, 180, 0.07);
+    border-radius: 150px;
+    box-shadow: 0px 0px 66px 170px rgba(131, 58, 180, 0.08);
+    mix-blend-mode: lighten;
+}
+.red-light {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: -120px;
+    width: 259px;
+    height: 259px;
+    background-color: rgba(150, 26, 26, 0.15);
+    border-radius: 150px;
+    box-shadow: 0px 0px 66px 170px rgba(150, 26, 26, 0.16);
+    mix-blend-mode: lighten;
+}
+.logo {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 52px;
+}
+.navigation {
+    position: relative;
+    z-index: 10;
+}
+.logo__underTxt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    color: #E4E5EA;
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style-type: none;
+}
+.purple-ball {
+    position: absolute;
+    top: 0;
+    right: 36%;
+}
+.red-ballLarge {
+    position: absolute;
+    top: 83px;
+    left: 36%;
+}
+.red-ballSmall {
+    position: absolute;
+    top: 547px;
+    right: 41%;
+    max-width: 28px;
+    max-height: 28px;
+}
+.nav-list__li_link {
+    color: #E4E5EA;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav-list__li_link:hover {
+    color: orange;
+    transition: 0.5s ease-out;
+}
+.nav-list__li_link:not(hover) {
+    transition: 0.5s;
+}
+.header-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 47px;
+    margin-left: 137px;
+}
+.header-conact__imgLinkBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.header-contact__tel {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #E4E5EA;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 490px;
+    margin-top: 90px;
+}
+.introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.introduction__h1 {
+    color: #E4E5EA;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+.introduction__h1_span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    background: linear-gradient(90deg, #FCB045 50%, #FF3F78 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.introduction__underTxt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #E4E5EA;
+}
+.main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.main-infoHeader__txtRight {
+    text-align: right;
+    color: #E4E5EA;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.main-infoHeader__txt {
+    text-align: right;
+    color: #E4E5EA;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.main-infoHeader__txtRight_span {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #FCB045 20%, #FD1D1D 70% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main-infoHeader__txt_span {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(20deg, #FCB045 60%, #FD1D1D );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main-infoMiddle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 330px;
+    text-align: right;
+    justify-content: end;
+}
+.main-InfoMiddleColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.main-InfoMiddleColumn__h2  {
+    color: #E4E5EA;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.main-InfoMiddleColumn__p {
+    color: #E4E5EA;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.main-InfoButton {
+    padding: 21px 34px 21px 35px;
+    border: none;
+    background-color: #4077F3;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #E4E5EA;
+    cursor: pointer;
+}
+.main-InfoButton:hover {
+    background-color: rgb(190, 1, 190);
+    transition: 0.3s ease-in;
+}
+.main-InfoButton:not(hover) {
+    transition: 0.3s ease-out;
+}
+.footerInfoBlocks {
+    display: flex;
+    flex-direction: row;
+    margin-top: 124px;
+}
+.aboutCompany, .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu {
+    margin-left: 98px;
+}
+.aboutCompany__Links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-wrap: wrap;
+    max-height: 135px;
+}
+.menu__Links {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+}
+.menu__linksBlock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.aboutCompany__h1, .menu__h1, .footerContacts__h1 {
+    color: #656566;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.aboutCompany__link, .menu__link, .footerContacts__tel, .footerContacts__adress {
+    text-decoration: none;
+    color: #E4E5EA;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.aboutCompany__link:hover, .menu__link:hover {
+    color: #FCB045;
+    transition: 0.5s;
+}
+.aboutCompany__link:not(:hover), .menu__link:not(:hover) {
+    transition: 0.5s;
+}
+.footerContacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+    margin-left: 163px;
+}
+.footerContacts__imgBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.copyrightBlock {
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: right;
+}
+.copyrightBlock__p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #E4E5EA;
+}
