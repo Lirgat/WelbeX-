@@ -295,3 +295,171 @@ header {
     font-weight: 400;
     color: #E4E5EA;
 }
+.introduction-list {
+    display: none;
+}
+.white-light {
+    display: none;
+}
+@media screen and (max-width: 550px)  {
+    .logo, .header-contact, .main-info  {
+        display: none;
+    }
+    .footerInfoBlocks {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footerContacts, .menu {
+        margin-left: 0;
+    }
+    .nav-list {
+        gap: 10px;
+    }
+    .mobHide {
+        display: none;
+    }
+    .nav-list__li_link {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .introduction__h1, .introduction__h1_span {
+        font-size: 36px;
+    }
+    .introduction {
+        gap: 15px;
+    }
+    .footerInfoBlocks {
+        position: relative;
+        z-index: 100;
+        margin-top: 70px;
+        padding: 20px 15px 20px 15px;
+        gap: 20px;
+        background-color: #0E1014;
+    }
+    header {
+        display: flex;
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .nav-list {
+        justify-content: center;
+    }
+    .main {
+        position: relative;
+        z-index: 100;
+        margin-top: 50px;
+    }
+    footer {
+        background-color: #0E1014;
+        width: 100%;
+    }
+    .navigation {
+        width: 100%;
+        padding: 20px;
+        background-color: #0E1014;
+    }
+    .introduction__underTxt {
+        font-size: 14px;
+    }
+    .footerContacts {
+        align-items: self-start;
+    }
+    .aboutCompany__link, .menu__link, .footerContacts__tel, .footerContacts__adress {
+        font-size: 14px;
+    }
+    .copyrightBlock {
+        margin-top: 0;
+        padding: 15px;
+        text-align: start;
+        background-color: #0E1014;
+    }
+    .introduction-list {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .introudction-list__p {
+        color: #E4E5EA;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .colored {
+        font-weight: 800;
+        background: linear-gradient(40deg, #FCB045 60%, #FD1D1D );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .colored2 {
+        font-weight: 800;
+        background: linear-gradient(40deg, #FCB045 85%, #FD1D1D );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .introduction-list__block {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 290px;
+    }
+    .introduction-list__blockTxt {
+        font-size: 13px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: #E4E5EA;
+    }
+    .introduction-list__blockTxt_span {
+        font-size: 20px;
+        background: linear-gradient(40deg, #FCB045 20%, #FD1D1D );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .red-light {
+        width: 60px;
+        height: 60px;
+        left: 30px;
+        top: 70%;
+        z-index: 2;
+    }
+    .purple-light {
+        width: 60px;
+        height: 60px;
+        top: 40%;
+        right: 30px;
+    }
+    .white-light {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: -50px;
+        left: 10px;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 150px;
+        box-shadow: 0px 0px 66px 170px rgba(255, 255, 255, 0.09);
+        mix-blend-mode: lighten;
+    }
+    .red-ballLarge {
+        position: absolute;
+        top: 480px;
+        left: 10%;
+        width: 60px;
+        height: 60px;
+        filter: blur(5px);
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .purple-ball {
+        position: absolute;
+        top: 40%;
+        right: -10px;
+        transform: rotate(90deg);
+        filter: blur(5px);
+    }
+}
